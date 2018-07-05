@@ -63,16 +63,16 @@ int main(int argc, char **argv)
 {
 	int leitura;
 	int i = 0;
-	while(i++ < 100000){
-		//printf("Informe o valor: ");
-		//scanf("%d",&leitura);
-		//if (leitura == 0)
-		//	break;
+	while(1){
+		printf("Informe o valor: ");
+		scanf("%d",&leitura);
+		if (leitura == 0)
+			break;
 			
-		enfileirar(i);
+		enfileirar(leitura);
 	}
 	
-	/*listar();
+	listar();
 	printf("Informe a chave: ");
 	int chave;
 	scanf("%d",&chave);
@@ -83,7 +83,7 @@ int main(int argc, char **argv)
 		printf("Chave encontrada na posicao: %p", pos);
 	desenfileirar();
 	desenfileirar();
-	listar();*/
+	listar();
 	return 0;
 }
 
